@@ -1,10 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golearning/simpleinterest"
+)
 
 func main() {
-	fmt.Println("Hello world!")
-	fmt.Println("Checking 2nd commit to the same file on github")
-	fmt.Println("Checking 3rd commit to the same file on github")
-	fmt.Println("Checking 4th commit to the same file on github")
+	fmt.Println("Simple interest calculation")
+	p := 5000.0
+	r := 10.0
+	t := 1.0
+	si := simpleinterest.Calculate(p, r, t)
+	fmt.Println("Simple interest is", si)
 }
